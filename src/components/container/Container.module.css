@@ -1,0 +1,14 @@
+.container{
+    margin: 60px 0;
+    display: flex;
+    background-color: rgba(251, 251, 251, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsiveness for tablet and mobile */
+/* @media (min-width: 700px) and (max-width: 1200px) {
+   .container{
+    margin: 32% 0;
+   }
+} */

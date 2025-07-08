@@ -1,0 +1,197 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 17px 46px 0px rgba(92, 99, 107, 0.08); 
+    background-color: rgb(255, 255, 255, 1);
+    border-radius: 24px;
+}
+.formHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.headerContent{
+    display: flex;
+    gap: 24px;
+}
+.headerCont1{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgba(26, 7, 16, 0.85);
+}
+.headerCont2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(107, 198, 45, 1);
+    margin-top: 5px;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+}
+.formField input, .phoneField input, .codeField select{
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(221, 221, 221,1);
+    width: 90%;
+    outline: none;
+}
+.radioField{
+    display: flex;
+    gap: 12px;
+}
+.radioField input[type="radio"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(89, 50, 234, 1);
+    border-radius: 50%;
+    background-color: rgba(239, 73, 143, 0.16);
+    margin-top: 5px;
+}
+.radioField input[type="radio"]:checked{
+    border: 4px solid rgba(89, 50, 234, 1);
+    background-color: #fff;
+}
+.gender{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(26, 7, 16, 0.65);
+}
+.radioField label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1a0710d9;
+    display: flex;
+    gap: 8px;
+}
+.information{
+    display: flex;
+    gap: 8px;
+}
+.information p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    color: rgba(26, 7, 16, 0.65);
+}
+/* style for countryCode and phone */
+.phoneCode{
+    display: flex;
+    gap: 8px;
+}
+.codeField{
+    width: 25%;
+}
+.phoneField{
+    width: 70%;
+}
+.error{
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.65);
+}
+.phoneFielderror{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.65);
+}
+.optional{
+    margin-left: 270px;
+    margin-top: -33px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.4);
+}
+
+.btn{
+    background-color: #5932ea;
+    padding: 12px 36px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    left: 0.15px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.error{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.65);
+    margin-top: -15px;
+}
+/* Responsiveness for tablet and mobile */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .formHeader img{
+        width: 20px;
+    }
+    .codeField img{
+        left: 245px;
+        top: 325px;
+    }
+    .optional{
+        right: 220px;
+        top: 387px;
+    }
+}
+
+@media (max-width: 700px) {
+    .formContainer{
+        width: 100%;
+    }
+    .formHeader img{
+        width: 20px;
+    }
+    .headerCont1{
+        font-size: 16px;
+    }
+    .headerCont2{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .radioField input[type="radio"]{
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        margin-top: 6px;
+    }
+    .gender{
+        font-size: 12px;
+    }
+    .radioField label{
+        font-size: 12px;
+    }
+    .information p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .codeField img{
+        left: 100px;
+        top: 326px;
+    }
+    .optional{
+        right: 50px;
+        top: 387px;
+    }
+}

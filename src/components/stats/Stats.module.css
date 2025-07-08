@@ -1,0 +1,81 @@
+.statsContainer{
+    /* border: 1px solid #f0f0f0; */
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.statsContainer h6{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.14px;
+    color: #acacac;
+}
+.statsContainer h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.32px;
+    color: #333333;
+}
+.arrowUp{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.12px;
+    color: #00ac4f;
+}
+.arrowDown{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.12px;
+    color: #d0004b;
+}
+.month{
+    font-weight: 400;
+    color: #292d32;
+}
+.statsUsers{
+    display: flex;
+}
+.statsUsers img{
+    margin-right: -8px;
+}
+.statsCont{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* Responsiveness for tablet and mobile */
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .statsContainer{
+        background-color: #ffffff;
+        gap: 32px;
+    }
+    .statsContainer h1{
+        font-size: 24px;
+    }
+    .statsContainer h6{
+        font-size: 12px;
+    }
+    .arrowUp, .arrowDown{
+        font-size: 10px;
+    }
+    .statsUsers img{
+        margin-right: -14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .statsContainer h1{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,53 @@
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* gap: 16px; */
+}
+.navItem{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.14px;
+    color: rgba(145, 151, 179, 1);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.navItem:hover{
+    background: #f0f0f0;
+}
+.chevron{
+    margin-left: auto;
+    font-size: 12px;
+}
+.active{
+    background-color: #5932ea;
+    color: #ffffff;
+}
+.active span{
+    color: #ffffff;
+}
+
+
+/* Responsiveness for tablet and mobile */
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .menuContainer{
+        gap: 10px;
+    }
+    .navItem{
+        width: 180px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .navItem{
+        width: 25px;
+    }
+}

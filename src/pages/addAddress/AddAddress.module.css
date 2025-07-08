@@ -1,0 +1,140 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 17px 46px 0px rgba(92, 99, 107, 0.08); 
+    background-color: rgb(255, 255, 255, 1);
+    border-radius: 24px;
+}
+.formHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.headerContent{
+    display: flex;
+    gap: 24px;
+}
+.headerCont1{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgba(26, 7, 16, 0.85);
+}
+.headerCont2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(107, 198, 45, 1);
+    margin-top: 5px;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+.formField{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(221, 221, 221,1);
+}
+.formField label{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(26, 7, 16, 0.65);
+}
+.formApartment{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(221, 221, 221,1);
+}
+.formApartment input{
+    border: transparent;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.formApartment p{
+    color: rgba(26, 7, 16, 0.4);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 275px;
+    margin-top: -20px;
+}
+
+.formField input{
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+}
+.formField input::placeholder, .formApartment input::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.85);
+}
+.stateZip{
+    display: flex;
+    gap: 16px;
+}
+.stateZip .formField{
+    width: 143px;
+}
+.error{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(26, 7, 16, 0.65);
+    margin-top: -12px;
+}
+.stateZip .error{
+    margin-top: 5px;
+}
+.addressBtn{
+    margin-top: 50px;
+}
+
+/* Responsiveness for tablet and mobile */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .formHeader img{
+        width: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .formContainer{
+        width: 100%;
+    }
+    .formHeader img{
+        width: 20px;
+    }
+    .headerCont1{
+        font-size: 16px;
+    }
+    .headerCont2{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .formApartment p{
+        margin-left: 190px;
+        margin-top: -20px;
+    }
+    .stateZip{
+        flex-direction: column;
+    }
+    .stateZip .formField{
+        width: 88.5%;
+    }
+}

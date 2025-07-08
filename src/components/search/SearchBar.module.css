@@ -1,0 +1,26 @@
+.searchContainer{
+    display: flex;
+    gap: 8px;
+    box-shadow: 0px 10px 60px 0px #E2ECF980;
+    padding: 10px;
+    border: 1px solid #E2ECF980;
+    width: 216px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+.searchContainer input{
+    border: transparent;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Responsiveness for tablet and mobile */
+
+@media (max-width: 700px) {
+    .searchContainer{
+        background-color: #f9f5ff;
+    }
+    .searchContainer input{
+        background-color: #f9f5ff;
+    }
+}

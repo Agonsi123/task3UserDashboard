@@ -1,0 +1,60 @@
+.dashLayout{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(250, 251, 255, 1);
+}
+.SidebarLayout{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+    padding: 30px;
+}
+.mainLayout{
+    flex: 1;
+    padding: 30px 50px;
+    /* border: 1px solid red; */
+}
+
+/* Responsiveness for tablet and mobile */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .dashLayout{
+        position: relative;
+    }
+    .SidebarLayout{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 100vh;
+        z-index: 1000;
+        padding: 10px;
+    }
+    .mainLayout{
+        margin-left: 70px;
+        min-width: calc(100vw - 70px);
+        overflow-x: auto;
+        padding: 20px;
+        white-space: nowrap;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .dashLayout{
+        position: relative;
+    }
+    .SidebarLayout{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        border-right: 1px solid #eeeeee;
+    }
+    .mainLayout{
+        margin-left: 70px;
+        min-width: calc(100vw - 70px);
+        overflow-x: auto;
+        padding: 20px;
+        white-space: nowrap;
+    }
+}

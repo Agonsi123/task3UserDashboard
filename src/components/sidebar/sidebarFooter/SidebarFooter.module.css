@@ -1,0 +1,84 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footerTop{
+    background: linear-gradient(107.91deg, #EAABF0 7.37%, #4623E9 95.19%);
+    height: 130px;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 2px 4px 4px 0px #4F2AEA2B;
+}
+.footerTop p{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    color: #ffffff;
+    width: 65%;
+    text-align: center;
+}
+.footerTop button{
+    padding: 12px;
+    width: 75%;
+    border-radius: 20px;
+    font-family: "Poppins";
+    color: #4925e9;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.14;
+    border: transparent;
+}
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.footerUserImage{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.footerUserName{
+    width: 129px;
+}
+.footerUserImage h5{
+    font-family: "Poppins";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.14px;
+    font-weight: 400;
+    color: #000000;
+}
+.footerUserName p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    color: #757575;
+}
+
+/* Responsiveness for tablet and mobile */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .footerContainer{
+        width: 180px;
+        padding: 10px;
+    }
+    .footerTop{
+        width: 180px;
+    }
+    .footerBottom{
+        width: 180px;
+        gap: 1px;
+    }
+}
