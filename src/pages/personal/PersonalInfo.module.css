@@ -98,13 +98,13 @@
 .phoneField{
     width: 70%;
 }
-.error{
+/* .error{
     margin-top: 15px;
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
     color: rgba(26, 7, 16, 0.65);
-}
+} */
 .phoneFielderror{
     margin-top: 5px;
     font-size: 13px;
@@ -146,10 +146,6 @@
     .formHeader img{
         width: 20px;
     }
-    .codeField img{
-        left: 245px;
-        top: 325px;
-    }
     .optional{
         right: 220px;
         top: 387px;
@@ -186,12 +182,17 @@
         font-size: 10px;
         line-height: 20px;
     }
-    .codeField img{
-        left: 100px;
-        top: 326px;
+    .codeField{
+        width: 38%;
+    }
+    .phoneField{
+        width: 55%;
     }
     .optional{
-        right: 50px;
+        margin-left: 190px;
         top: 387px;
+    }
+    .error, .phoneFielderror{
+        font-size: 10px;
     }
 }

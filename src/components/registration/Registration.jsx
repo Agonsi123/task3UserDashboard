@@ -78,6 +78,7 @@ const Registration = () => {
                 <Field name="email" type="email" placeholder="example@mail.com" />
                 <img className={styles.goodIcon2} src={goodIcons} alt="Good Icon" />
               </div>
+              <ErrorMessage name="email" component="div" className={styles.error} />
               <div className={styles.formField}>
                 <label htmlFor="email">Password</label>
                 <Field name="password" type="password" placeholder="********" />
@@ -88,7 +89,7 @@ const Registration = () => {
 
               {/* Firebase errors displayed here */}
               {firebaseError && <div className={styles.firebaseError}>{firebaseError}</div>}
-              
+
               <div className={styles.registrationBtn} disabled={isSubmitting}>
                 <Button btnText={isSubmitting ? "Registering..." : "Create account"} />
               </div>

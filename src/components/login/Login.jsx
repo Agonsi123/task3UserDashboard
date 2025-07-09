@@ -77,6 +77,7 @@ const Login = () => {
                 <label htmlFor="email">Email address</label>
                 <Field name="email" type="email" placeholder="example@mail.com" />
               </div>
+              <ErrorMessage name="email" component="div" className={styles.error} />
               <div className={styles.formField}>
                 <label htmlFor="email">Password</label>
                 <Field name="password" type="password" placeholder="********" />
