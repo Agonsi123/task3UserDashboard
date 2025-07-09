@@ -23,12 +23,17 @@
     color: rgba(131, 131, 131, 1);
 }
 
-/* @media (max-width: 700px) {
-    .headerContent h1{
-        display: none;
+/* Responsiveness for tablet and mobile */
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .sideheader{
+        margin-top: 16px;
     }
-    .sideheader p{
-        display: none;
+}
+
+@media (max-width: 700px) {
+    .sideheader{
+        margin-top: -24px;
     }
-} */
+}
 

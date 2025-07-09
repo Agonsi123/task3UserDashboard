@@ -1,2 +1,2 @@
 # task3UserDashboard
-Built a User Dashboard, Authenticated sign up and sign, also integrated Google sign in using Firebase API. Forms are validated using Formik. Application is responsive.
+A User Dashboard built using Firebase API to Authenticate sign up and sign in, also integrated Google sign in. Forms are validated using Formik. Application is responsive.
