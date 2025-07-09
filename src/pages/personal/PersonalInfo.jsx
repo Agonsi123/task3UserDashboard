@@ -117,7 +117,7 @@ const PersonalInfo = () => {
                 </div>
               </div>
 
-              <div className={styles.formField}>
+              <div className={styles.dateField}>
                 <Field name="birthday" type="date" placeholder="Birthday" />
                 <p className={styles.optional}>Optional</p>
               </div>
