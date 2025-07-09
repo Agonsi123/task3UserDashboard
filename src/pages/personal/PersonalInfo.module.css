@@ -184,6 +184,8 @@
     }
     .codeField{
         width: 38%;
+    }.codeField select{
+        height: 50px;
     }
     .phoneField{
         width: 55%;
