@@ -10,11 +10,12 @@ const SidebarHeader = ({collapsed}) => {
       ) : (
         <div className={styles.headerContent}>
           <img src={setting} alt="logo" />
-          <h1>Dashboard</h1>
+          <div className={styles.headerText}>
+            <h1>Dashboard</h1>
+            <p>v.01</p>
+          </div>
         </div>
       )}
-      <p>v.01</p>
-
     </div>
   );
 }

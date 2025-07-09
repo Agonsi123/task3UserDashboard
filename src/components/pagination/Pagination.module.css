@@ -1,7 +1,7 @@
 .pageContainer{
     display: flex;
     align-items: center;
-    gap: 295px;
+    gap: 305px;
     padding: 30px 16px;
 }
 .pageBtns{

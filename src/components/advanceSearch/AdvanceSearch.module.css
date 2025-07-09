@@ -29,7 +29,7 @@
 }
 .advanceSch{
     display: flex;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
 }
 .advanceSort{
@@ -60,6 +60,7 @@
 @media (min-width: 700px) and (max-width: 1200px) {
     .advanceContainer{
         margin-left: 120px;
+        gap: 225px;
     }
 }
 
