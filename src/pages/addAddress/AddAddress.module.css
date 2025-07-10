@@ -108,6 +108,9 @@
 
 /* Responsiveness for tablet and mobile */
 @media (min-width: 700px) and (max-width: 1200px) {
+    .formContainer{
+        margin-top: 10%;
+    }
     .formHeader img{
         width: 18px;
     }

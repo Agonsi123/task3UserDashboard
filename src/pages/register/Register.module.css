@@ -39,7 +39,7 @@
 /* Responsiveness for tablet and mobile */
 @media (min-width: 700px) and (max-width: 1200px) {
     .registerContainer{
-        margin-top: 18%;
+        margin-top: 10%;
     }
     .tabs button{
         font-size: 24px;

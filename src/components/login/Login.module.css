@@ -43,9 +43,9 @@
 }
 
 .eyeIcon{
-    position: absolute;
-    right: 470px;
-    top: 337px;
+    width: 20px;
+    margin-left: 320px;
+    margin-top: -37px;
 }
 .error, .firebaseError{
     margin-top: -15px;
@@ -65,7 +65,6 @@
     appearance: none;
     width: 15px;
     height: 15px;
-    /* border: 1px solid; */
     background-color: rgba(239, 73, 143, 0.12);
 }
 .checkboxField input[type="checkbox"]:checked{
@@ -107,10 +106,36 @@
 
 /* Responsiveness for tablet and mobile */
 
+
 @media (min-width: 700px) and (max-width: 1200px) {
+    .formContainer p{
+        font-size: 20px;
+    }
+    .formContent{
+        gap: 24px;
+    }
+    .formField label{
+        font-size: 16px;
+    }
+    .formField input::placeholder{
+        font-size: 20px;
+    }
     .eyeIcon{
         right: 220px;
         width: 25px;
-        top: 340px;
+        top: 485px;
+    }
+    .checkboxField input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+    }
+    .checkboxField label{
+        font-size: 18px;
+    }
+    .formContent p{
+        font-size: 13px;
+    }
+    .error, .firebaseError{
+        font-size: 18px;
     }
 }

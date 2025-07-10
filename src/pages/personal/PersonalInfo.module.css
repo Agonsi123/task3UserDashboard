@@ -178,7 +178,7 @@
         font-size: 20px;
     }
     .optional{
-        margin-left: 220px;
+        margin-left: 260px;
         margin-top: -40px;
     }
     .error, .phoneFielderror{
@@ -222,12 +222,13 @@
         flex-direction: column;
         gap: 24px;
     }
-    .codeField, .phoneField{
+    .codeField, .phoneField, .dateField{
         width: 100%;
     }
     .codeField select{
         font-size: 16px;
     }
+    
     .dateField input{
         font-size: 16px;
     }

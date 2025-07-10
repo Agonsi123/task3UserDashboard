@@ -21,7 +21,6 @@
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(221, 221, 221,1);
-    /* outline: 1px solid rgba(89, 50, 234,1); */
 }
 
 .formField label{
@@ -45,19 +44,19 @@
 }
 
 .goodIcon{
-    position: absolute;
-    right: 500px;
-    top: 330px;
+    width: 20px;
+    margin-left: 290px;
+    margin-top: -38px;
 }
 .goodIcon2{
-    position: absolute;
-    right: 470px;
-    top: 260px;
+    width: 20px;
+    margin-left: 317px;
+    margin-top: -38px;
 }
 .eyeIcon{
-    position: absolute;
-    right: 470px;
-    top: 330px;
+    width: 20px;
+    margin-left: 317px;
+    margin-top: -38px;
 }
 .error, .firebaseError{
     margin-top: -15px;
@@ -111,25 +110,25 @@
         gap: 24px;
     }
     .formField label{
-        font-size: 16px;
+        font-size: 17px;
     }
     .formField input::placeholder{
         font-size: 20px;
     }
     .goodIcon{
-        right: 280px;
+        margin-left: 285px;
         width: 25px;
-        top: 480px;
+        margin-top: -50px;
     }
     .goodIcon2{
-        right: 240px;
+        margin-left: 320px;
         width: 25px;
-        top: 408px;
+        margin-top: -38px;
     }
     .eyeIcon{
-        right: 240px;
+        margin-left: 320px;
         width: 25px;
-        top: 480px;
+        margin-top: -36px;
     }
     .checkboxField input[type="checkbox"]{
         width: 18px;
@@ -148,18 +147,21 @@
 
 @media (max-width: 700px) {
     .goodIcon{
-        right: 80px;
+        margin-left: 275px;
         width: 20px;
-        top: 335px;
+        margin-top: -38px;
     }
     .goodIcon2{
-        right: 50px;
+        margin-left: 300px;
         width: 20px;
-        top: 270px;
+        margin-top: -35px;
     }
     .eyeIcon{
-        right: 50px;
+        margin-left: 300px;
         width: 20px;
-        top: 335px;
+        margin-top: -38px;
+    }
+    .formContent p{
+        font-size: 13px;
     }
 }
