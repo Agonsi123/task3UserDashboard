@@ -78,7 +78,6 @@
     appearance: none;
     width: 15px;
     height: 15px;
-    /* border: 1px solid; */
     background-color: rgba(239, 73, 143, 0.12);
 }
 .checkboxField input[type="checkbox"]:checked{
@@ -105,18 +104,45 @@
 }
 /* Responsiveness for tablet and mobile */
 @media (min-width: 700px) and (max-width: 1200px) {
+    .formContainer p{
+        font-size: 20px;
+    }
+    .formContent{
+        gap: 24px;
+    }
+    .formField label{
+        font-size: 16px;
+    }
+    .formField input::placeholder{
+        font-size: 20px;
+    }
     .goodIcon{
-        right: 250px;
+        right: 280px;
         width: 25px;
+        top: 480px;
     }
     .goodIcon2{
-        right: 220px;
+        right: 240px;
         width: 25px;
-        top: 265px;
+        top: 408px;
     }
     .eyeIcon{
-        right: 220px;
+        right: 240px;
         width: 25px;
+        top: 480px;
+    }
+    .checkboxField input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+    }
+    .checkboxField label{
+        font-size: 18px;
+    }
+    .formContent p{
+        font-size: 13px;
+    }
+    .error, .firebaseError{
+        font-size: 18px;
     }
 }
 
