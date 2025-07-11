@@ -121,6 +121,7 @@
     left: 0.15px;
     color: #fff;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .error{
@@ -224,16 +225,11 @@
     }
     .codeField, .phoneField{
         width: 100%;
-        /* border: 1px solid red; */
     }
     .codeField select{
         font-size: 16px;
         width: 100%;
-        /* border: 1px solid green; */
     }
-    /* .dateField{
-        border: 1px solid red;
-    } */
     
     .dateField input{
         font-size: 16px;

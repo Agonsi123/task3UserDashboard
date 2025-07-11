@@ -46,7 +46,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        min-height: 100vh;
+        height: 1300px;
         z-index: 1000;
         border-right: 1px solid #eeeeee;
     }
