@@ -222,15 +222,20 @@
         flex-direction: column;
         gap: 24px;
     }
-    .codeField, .phoneField, .dateField input{
+    .codeField, .phoneField, .dateField{
         width: 100%;
+        /* border: 1px solid red; */
     }
     .codeField select{
         font-size: 16px;
+        width: 100%;
+        /* border: 1px solid green; */
     }
     
     .dateField input{
         font-size: 16px;
+        width: 100%;
+        /* border: 1px solid green; */
     }
     
     .optional{
