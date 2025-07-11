@@ -222,7 +222,7 @@
         flex-direction: column;
         gap: 24px;
     }
-    .codeField, .phoneField, .dateField{
+    .codeField, .phoneField, .dateField input{
         width: 100%;
     }
     .codeField select{
