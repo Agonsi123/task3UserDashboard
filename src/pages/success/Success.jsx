@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from '../success/Success.module.css';
+import { NavContext } from '../../context/Index';
 import Container from '../../components/container/Container';
 import Button from '../../components/button/Button';
 import IconRemove from "../../assets/images/IconRemove.svg";
@@ -10,6 +11,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Success = () => {
+
+  const {setActiveTab} = useContext(NavContext);
 
     const navigate = useNavigate();
 
@@ -27,7 +30,10 @@ const Success = () => {
         <div className={styles.successContent}>
           <h1>You are successfully registered!</h1>
           <div
-              onClick={() => navigate('/')}
+              onClick={() => {
+                navigate("/");
+                setActiveTab("login");
+              }}
           >
             <Button btnText="Go to Login" />
           </div>

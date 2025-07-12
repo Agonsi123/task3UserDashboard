@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import styles from '../register/Register.module.css';
+import { NavContext } from '../../context/Index';
 import Registration from '../../components/registration/Registration';
 import Login from '../../components/login/Login';
 import Facebook from '../../assets/images/Facebook.svg'
@@ -12,7 +13,7 @@ import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const [activeTab, setActiveTab] = useState('register');
+    const { activeTab, setActiveTab } = useContext(NavContext);
 
     const [firebaseError, setFirebaseError] = useState('');
     const [loading, setLoading] = useState(false);
