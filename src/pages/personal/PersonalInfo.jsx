@@ -55,11 +55,11 @@ const PersonalInfo = () => {
           {({ isSubmitting }) => (
             <Form
               className={styles.formContent}
-              onSubmit={(e) => {
-                console.log("Form is trying to submit");
-                e.preventDefault();
-                navigate('/address');
-              }}
+              // onSubmit={(e) => {
+              //   console.log("Form is trying to submit");
+              //   e.preventDefault();
+              //   navigate('/address');
+              // }}
             >
               <div className={styles.formField}>
                 <Field name="fullname" type="text" placeholder="Full name" />
