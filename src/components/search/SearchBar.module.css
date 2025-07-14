@@ -19,6 +19,7 @@
 @media (max-width: 700px) {
     .searchContainer{
         background-color: #f9f5ff;
+        padding: 10px 2px;
     }
     .searchContainer input{
         background-color: #f9f5ff;
