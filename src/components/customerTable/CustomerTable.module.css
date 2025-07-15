@@ -55,5 +55,6 @@
     .tableContainer{
         overflow-x: scroll;
         margin-left: 24px;
+        box-shadow: 0px 10px 60px 0px #5a6b8180;
     }
 }
