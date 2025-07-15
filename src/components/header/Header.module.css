@@ -30,6 +30,7 @@
     .headerContainer{
         flex-direction: column;
         gap: 20px;
-        width: 260px;
+        width: 240px;
+        margin-left: 24px;
     }
 }

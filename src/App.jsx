@@ -7,7 +7,7 @@ import PersonalInfo from './pages/personal/PersonalInfo';
 import Address from './pages/address/Address';
 import AddAddress from './pages/addAddress/AddAddress';
 import Success from './pages/success/Success';
-// import { LoginRoute } from './context/LoginRoute';
+import ProtectedRoute from './context/ProtectedRoute';
 import DashboardLayout from './components/dashboardLayout/DashboardLayout';
 import Dashboard from './pages/dashboard/Dashboard';
 
@@ -22,7 +22,14 @@ function App() {
         <Route path="/address" element={<Address />} />
         <Route path="/addaddress" element={<AddAddress />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout />
+            </ProtectedRoute>
+          }
+        >
           <Route index element={<Dashboard />} />
         </Route>
       </Routes>

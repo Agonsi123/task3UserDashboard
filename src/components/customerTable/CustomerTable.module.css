@@ -1,14 +1,10 @@
 .tableContainer{
-    /* width: 70px; */
     border-collapse: collapse;
     background-color: #ffffff;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     padding: 12px;
 }
-/* .table{
-    border-bottom: 1px solid #eeeeee;
-} */
 .tbody .roll, .roll{
     font-family: "Poppins";
     padding: 16px;
@@ -58,5 +54,6 @@
 @media (max-width: 700px) {
     .tableContainer{
         overflow-x: scroll;
+        margin-left: 24px;
     }
 }

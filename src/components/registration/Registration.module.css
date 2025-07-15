@@ -61,14 +61,6 @@
     margin-left: 317px;
     margin-top: -38px;
 }
-.error, .firebaseError{
-    font-family: "Commissioner";
-    margin-top: -15px;
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
-    color: rgba(26, 7, 16, 0.65);
-}
 
 .registrationBtn{
     margin-top: 10px;
@@ -106,6 +98,14 @@
     text-decoration: underline;
     text-decoration-style: solid;
     color: #8fc2ff;
+}
+.error, .firebaseError{
+    font-family: "Commissioner";
+    margin-top: -15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: red;
 }
 /* Responsiveness for tablet and mobile */
 @media (min-width: 700px) and (max-width: 1200px) {
